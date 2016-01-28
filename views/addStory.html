@@ -1,0 +1,26 @@
+
+<div  ng-controller="addStoryController">
+ <p> <p> <center>
+
+ <button class="btn btn-default btn-sm"  ng-click="show=true"  ng-hide="show==true"> Ajouter une histoire </button> <p><p>
+
+
+    <div ng-show="show==true"  >
+    <!--voila le 1 er formulaire / insertion du titre ,du résumé -->
+<form id="uploadForm" ng-submit="inserer()"
+         enctype="multipart/form-data"
+         action="/inserer"
+         method="post"
+		 >
+Le titre: 	<input  type="text" name="article[name]" ng-model="article.name" placeholder='saisir le titre' required/><p><p>
+      <input type="file" name="userPhoto" ng-model="article.image" required/><p><p>
+
+  Le résumé: <textarea  id="editor"  ng-model="article.summary" class="form-control"
+  name="article[summary]" placeholder='saisir le résumé' required>
+  </textarea> <p> <p>
+
+	  <input type="submit" class="btn btn-default btn-sm"  ng-click="show1=true" required>
+      </form>  </div>
+  	<button class="btn btn-default btn-sm"  ng-show="show1==true" ui-sref="addPart"> Ajouter les parties </button><p> <p>
+
+   </div>

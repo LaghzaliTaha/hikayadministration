@@ -1,0 +1,21 @@
+<!doctype html>
+
+	  <div ng-app="MyModule" ng-controller="modifyArtController">
+      <p> <p> <center>
+      <!--form id="idParts1" method="post" action="/ModifyParts"-->
+
+		   {{article[0].article_name}}<p><p>
+			 {{article[0].article_summary}}   <p><p>
+			 {{article[0].article_image}}    <p><p>
+       {{article[0]._id}}   <p><p>
+
+	<div class="row">
+			  <div class="col-md-2"></div>
+			  <div class="col-md-8">
+					 {{article.parts.content}} <p>
+						  <p ng-repeat="(k,part) in filterSecId(article[0].parts)">
+						     {{part.content}}
+								 <button class="btn btn-primary" ui-sref="editPart({id_art:'{{article[0]._id}}', id_part:'{{part._id}}',part_content:'{{part.content}}'})">Modifier</button><p><p>
+				</div>
+</div>
+	  </div>

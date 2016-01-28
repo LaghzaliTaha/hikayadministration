@@ -1,0 +1,15 @@
+
+	  <div ng-controller="addPartController">
+      <p> <p> <center>
+
+     <form ng-submit="ajouter()">
+
+			 <textarea  id="editor" ng-model="article.part_content" style="width:1000px;height:350px;"  class="form-control"
+		         name="content" placeholder='saisir la partie'>
+		   </textarea> <p> <p>
+
+					<input type="submit" value="Ajouter" class="btn btn-default btn-sm" ng-click="s=true">
+    </form>
+
+     <button class="btn btn-default btn-sm"   ui-sref="question"  ng-show="s==true"> Question </button><p> <p>
+	   <button class="btn btn-default btn-sm"   ui-sref="affichage"  ng-show="s==true"> Afficher </button><p> <p>
