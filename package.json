@@ -13,7 +13,6 @@
     "morgan": "~1.5.3",
     "serve-favicon": "~2.2.1",
 	"multer": "~0.1.6",
-	"angular":"~1.2.13",
-    "angular ui-router":"~0.2.15"
+	"angular":"~1.2.13"
   }
 }
