@@ -14,7 +14,7 @@
     "serve-favicon": "~2.2.1",
 	"multer": "~0.1.6",
 	"angular":"~1.2.13"
-  }
+  },
   "engines": {
     "node": "4.1.1"
   }
