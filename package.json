@@ -1,7 +1,6 @@
 {
   "name": "stone-express-mongoose",
   "version": "0.0.0",
-  "private": true,
   "dependencies": {
     "body-parser": "~1.12.4",
     "express": "~4.12.4",
