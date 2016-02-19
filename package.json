@@ -1,6 +1,9 @@
 {
   "name": "stone-express-mongoose",
   "version": "0.0.0",
+    "description": "Login",
+  "main": "app.js",
+  "author": "DENA",
   "dependencies": {
     "body-parser": "~1.12.4",
     "express": "~4.12.4",
